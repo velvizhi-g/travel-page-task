@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBT</title>
+    <link rel="stylesheet" href="WBT.css">
+</head>
+<body>
+    <h1>WORLD BRIDGE TOURS</h1><br><br>
+
+    <div class="intro">
+    <ul>
+        <li><a href=#home>HOME</a></li>
+        <li><a href=#destinations>DESTINATIONS</a></li>
+        <li><a href=#services>SERVICES</a></li>
+        <li><a href=#packages>PACKAGES</a></li>
+        <li><a href=#contact>CONTACT</a></li>
+    </ul>
+    </div>
+
+    <div class="home" id="home">
+        <h1><p><strong>international tours and travels</strong></p></h1>
+        <h1>TRAVEL FARTHER <br>
+        LIVE THE JOURNEY</h1> 
+        <p>We plan memorable international holidays,family trips and customised tours around your budget</p>
+        <button><i>PLAN MY TRIP</i></button>
+    </div>
+    <div class="proud">
+        <h3><strong>50+</strong><br><em>DESTINATIONS</em></h3>
+        <h3><strong>500+</strong><br><em>HAPPY TRAVELLERS</em></h3>
+        <h3><strong>24/7</strong><br><em>TRAVEL SUPPORT</em></h3>
+    </div>
+
+    <div class="plan">
+        <p><em>plan your next trip</em></p>
+        <h1>where do you want to go?</h1>
+        <input type="text" placeholder="Choose Destination">
+        <select>
+            <option>DUBAI</option>
+            <option>SINGAPORE</option>
+            <option>MALDIVES</option>
+            <option>EUROPE</option>
+            <option>MALAYSIA</option> 
+        </select>
+        <input type="number" placeholder="number of travellers">
+        <select>
+            <option>1 to 2 people </option>
+            <option>3 to 5 people </option>
+            <option>6 to 10 people </option>
+            <option>10+people</option>
+        </select>
+        <button><i>GET MY PLAN</i></button>
+    </div>
+    
+      <div class="destination-grid">
+          <div class="destination-image dubai"></div>
+          <div class="card-content">
+            <span>UAE</span>
+            <h3>Dubai</h3>
+            <p>Skylines, desert adventures, shopping and luxury stays.</p>
+            <button onclick="chooseDestination('Dubai')">Plan Dubai →</button>
+          </div>
+
+          <div class="destination-image singapore"></div>
+          <div class="card-content">
+            <span>ASIA</span>
+            <h3>Singapore</h3>
+            <p>Modern city life, Sentosa, gardens and family attractions.</p>
+            <button onclick="chooseDestination('Singapore')">Plan Singapore →</button>
+          </div>
+
+          <div class="destination-image maldives"></div>
+          <div class="card-content">
+            <span>ISLAND</span>
+            <h3>Maldives</h3>
+            <p>Clear lagoons, beach resorts and relaxing island holidays.</p>
+            <button onclick="chooseDestination('Maldives')">Plan Maldives →</button>
+          </div>
+
+          <div class="destination-image thailand"></div>
+          <div class="card-content">
+        
+        
+            <span>ASIA</span>
+            <h3>Thailand</h3>
+            <p>Beaches, temples, food, nightlife and island experiences.</p>
+            <button onclick="chooseDestination('Thailand')">Plan Thailand →</button>
+          </div>
+
+          <div class="destination-image malaysia"></div>
+          <div class="card-content">
+            <span>ASIA</span>
+            <h3>Malaysia</h3>
+            <p>Kuala Lumpur, Langkawi, Genting and beautiful local culture.</p>
+            <button onclick="chooseDestination('Malaysia')">Plan Malaysia →</button>
+          </div>
+
+          <div class="destination-image europe"></div>
+          <div class="card-content">
+            <span>EUROPE</span>
+            <h3>Europe</h3>
+            <p>Paris, Switzerland, Italy and unforgettable multi-country tours.</p>
+            <button onclick="chooseDestination('Europe')">Plan Europe →</button>
+          </div>
+        </div>
+  </section>
+  
+  <section class="section enquiry-section" id="enquiry">
+    <div class="container enquiry-box">
+      <div class="enquiry-text">
+        <span class="small-label">LET'S PLAN IT</span>
+        <h2>Tell us about your dream trip.</h2>
+        <p>
+          Fill this short form. When you press the button, WhatsApp will open
+          with your enquiry already written for you.
+        </p>
+
+        <div class="contact-item">◉ <span>WhatsApp: +91 98848 99636</span></div>
+        <div class="contact-item">◷ <span>Mon - Sat: 9:00 AM - 8:00 PM</span></div>
+        <div cla
+        ss="contact-item">✉ <span>hello@worldbridgetours.com</span></div>
+      </div>
+
+      <form id="enquiryForm" class="enquiry-form">
+        <div class="two-inputs">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="tel" id="phone" placeholder="Phone number" required>
+        </div>
+
+        <input type="email" id="email" placeholder="Email address">
+
+        <select id="destination" required aria-label="Select destination">
+          <option value="">Select destination</option>
+          <option>Dubai</option>
+          <option>Singapore</option>
+          <option>Maldives</option>
+          <option>Thailand</option>
+          <option>Malaysia</option>
+          <option>Europe</option>
+          <option>Custom Trip</option>
+        </select>
+
+        <div class="two-inputs">
+          <input type="date" id="travelDate" aria-label="Travel Date">
+          <select id="budget" aria-label="Approximate budget">
+            <option value="">Approx. budget</option>
+            <option>Under ₹50,000</option>
+            <option>₹50,000 - ₹1,00,000</option>
+            <option>₹1,00,000 - ₹2,00,000</option>
+            <option>₹2,00,000+</option>
+          </select>
+        </div>
+
+        <textarea id="message"  placeholder="Tell us about your trip..."></textarea>
+
+        <button type="submit" class="btn whatsapp-btn">
+           Send Enquiry on WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>

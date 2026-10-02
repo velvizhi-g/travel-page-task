@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+body > h1 {
+    text-align: center;
+    background-color: #0b4f71;
+    color: white;
+    padding: 25px;
+    letter-spacing: 2px;
+}
+
+.intro {
+    background-color: white;
+    padding: 15px;
+    position: sticky;
+    display: flex;
+}
+
+.intro ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.intro li {
+    display: inline;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #16425b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.intro a:hover {
+    color: #0c91a6;
+}
+
+.home {
+    min-height: 550px;
+    padding: 100px 8%;
+
+    background-image:
+        linear-gradient(rgba(0, 40, 60, 0.65),
+        rgba(0, 40, 60, 0.65)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.home p:first-child {
+    color: #80e3ee;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.home > p {
+    max-width: 600px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.home button {
+    padding: 13px 25px;
+    background-color: #0c9db5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background-color: #087d91;
+}
+
+.proud {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.proud h3 {
+    width: 250px;
+    padding: 25px 10px;
+    border-right: 1px solid #ddd;
+}
+
+
+.proud strong {
+    color: #0b829b;
+    font-size: 28px;
+}
+
+.proud em {
+    font-style: normal;
+    font-size: 12px;
+    color: #777;
+}
+
+.plan {
+    background-color: white;
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.plan > p {
+    color: #0b829b;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.plan h1 {
+    color: #16425b;
+    margin: 10px 0 25px;
+}
+
+.plan input,
+.plan select {
+    width: 19%;
+    height: 45px;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.plan select:focus {
+    outline: none;
+    border-color: #0b829b;
+}
+
+.plan button {
+    height: 45px;
+    padding: 0 20px;
+    background-color: #16425b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #0b829b;
+}
+
+.destination-grid {
+    width: 90%;
+    max-width: 1150px;
+    margin: 30px auto 70px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.dubai {
+    background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80");
+}
+
+.singapore {
+    background-image: url("https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80");
+}
+
+.maldives {
+    background-image: url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80");
+}
+
+.thailand {
+    background-image: url("https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80");
+}
+
+.malaysia {
+    background-image: url("https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80");
+}
+
+.europe {
+    background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80");
+}
+
+.card-content {
+    background-color: white;
+    padding: 18px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.card-content span {
+    font-size: 11px;
+    color: #0b829b;
+    font-weight: bold;
+}
+
+.card-content h3 {
+    color: #16425b;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+.card-content button {
+    margin-top: 12px;
+    border: none;
+    background-color: transparent;
+    color: #087d91;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    color: #16425b;
+}
+
+.enquiry-section {
+    background-color: #eaf3f5;
+    padding: 70px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.enquiry-box {
+    background-color: white;
+    padding: 45px;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    box-shadow: 0 3px 15px #ddd;
+}
+
+.small-label {
+    color: #0b829b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.enquiry-text h2 {
+    color: #16425b;
+    font-size: 35px;
+    margin: 10px 0 15px;
+}
+
+.enquiry-text > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin: 12px 0;
+    color: #444;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.two-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.enquiry-form textarea {
+    resize: vertical;
+}
+
+
+.whatsapp-btn {
+    background-color: #159447;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #107638;
+}
+
+.form-message {
+    text-align: center;
+    color: #0b829b;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+
+    .intro ul {
+        gap: 20px;
+    }
+
+    .home h1 {
+        font-size: 42px;
+    }
+
+    .plan input,
+    .plan select {
+        width: 40%;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .enquiry-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body > h1 {
+        font-size: 24px;
+    }
+
+    .intro ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .intro a {
+        font-size: 11px;
+    }
+
+    .home {
+        padding: 70px 25px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home > p {
+        font-size: 15px;
+    }
+
+    .proud {
+        flex-direction: column;
+    }
+
+    .proud h3 {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .proud h3:last-child {
+        border-bottom: none;
+    }
+
+    .plan {
+        width: 92%;
+        padding: 25px 15px;
+    }
+
+    .plan input,
+    .plan select,
+    .plan button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+
+    .enquiry-section {
+        padding: 45px 15px;
+    }
+
+    .enquiry-box {
+        padding: 25px 18px;
+        gap: 30px;
+    }
+
+    .enquiry-text h2 {
+        font-size: 28px;
+    }
+
+    .two-inputs {
+        grid-template-columns: 1fr;
+    }
+}
